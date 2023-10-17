@@ -122,4 +122,31 @@ section{
     cursor: pointer;
     z-index: 3;
     position: absolute;
+    object-fit: contain;
+    width: 64px;
+    height: 64px;
+}
+.pawn_holder{
+    position: relative;
+    display: grid;
+    place-items: center;
+    width: 65px;
+    height: 65px;
+}
+.player{
+    position: absolute;
+    bottom: -40px;
+}
+
+/* ........finished........ */
+.finish{
+    display: none;
+    place-items: center;
+    inset: 0;
+    position:absolute;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.801);
+}
+.show{
+    display: grid;
 }

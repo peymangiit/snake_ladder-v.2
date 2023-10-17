@@ -8,19 +8,36 @@
     <script src="./script.js" defer></script>
 </head>
 <body>
+    <div class="finish">
+        <div>
+            <p style="color: antiquewhite; font-size:36px; font-weight: bold; margin-bottom: 20px;">بازی به پایان رسید</p>
+            <button id="restart" class="btn">بازی دوباره</button>
+        </div>
+    </div>
     <main>
         <aside class="Tas">
             <h1>بازی مار و پله</h1>
+            <h4 style="color: aliceblue;"></h4>
             <div class="dice" id="dice">&#9856; </div>
             <!-- &#9857; &#9858; &#9859; &#9860; &#9861; -->
-            <button class="roll-btn">پرتاب تاس</button>
+            <button class="btn roll-btn">پرتاب تاس</button>
 
             <br><br>
             <h3 class="guide" style="text-align: center;">با پرتاب تاس بازی را شروع کنید</h3>
             <H2></H2>
             <br><br>
+            <div style="display: flex; justify-content:space-evenly;">
+                <div class="pawn_holder" id="player1" >
+                    <p class="player"> بازیکن شماره دو</p>
+                    <img src="./images/animals/fox-trans.png" alt="pawn" srcset="" draggable="true" id="pawn1"  class="drag">
+                </div>
+                
+                <div class="pawn_holder" id="player0" >
+                    <p class="player"> بازیکن شماره یک</p>
+                    <img src="./images/animals/kuala-trans.png" alt="pawn" srcset="" draggable="true" id="pawn0" class="drag">
+                </div>
 
-           <img src="./icon/pawnRED.png" alt="pawn" srcset="" draggable="true" id="pawn" class="drag">
+            </div>
         </aside>
 
         <section class="map">
