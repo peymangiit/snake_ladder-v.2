@@ -211,4 +211,7 @@ restartEl.addEventListener("click", () =>{
     document.querySelector("#player1").appendChild(document.querySelector("#pawn1"));
     [move[0], move[1]] = [0, 0];
     document.querySelector(".finish").classList.toggle("show");
+    players =["پرتاب تاس برای بازیکن شماره یک", "پرتاب تاس برای بازیکن شماره دو"];
+    document.querySelector("h4").innerHTML = players[0];
+
 })
